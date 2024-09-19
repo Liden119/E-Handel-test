@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enkel Varukorg</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="products">
+            <h2>Produkter</h2>
+            <div class="product">
+                <p>Produkt 1 - 100 kr</p>
+                <button onclick="addToCart('Produkt 1', 100)">Lägg till i varukorg</button>
+            </div>
+            <div class="product">
+                <p>Produkt 2 - 200 kr</p>
+                <button onclick="addToCart('Produkt 2', 200)">Lägg till i varukorg</button>
+            </div>
+            <div class="product">
+                <p>Produkt 3 - 300 kr</p>
+                <button onclick="addToCart('Produkt 3', 300)">Lägg till i varukorg</button>
+            </div>
+        </div>
+
+        <div class="cart">
+            <h2>Varukorg</h2>
+            <ul id="cart-items">
+                <li>Din varukorg är tom</li>
+            </ul>
+            <p id="total-price">Totalt: 0 kr</p>
+            <a href="/middle.html"><button>Gå till Utcheckning</button></a>
+        </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
